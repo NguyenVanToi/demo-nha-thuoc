@@ -1,0 +1,243 @@
+html, body {
+  height: 100%;
+  font-family: "Roboto";
+  font-size: 14px;
+  color: #242424;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.custom-nav {
+  background: #0065ac;
+  color: #ffffff;
+}
+
+.banner {
+  max-height: 350px;
+  display: flex;
+}
+.banner .carousel, .banner .carousel-inner {
+  max-height: 100%;
+  display: flex;
+}
+.banner .carousel-item {
+  max-height: 100%;
+}
+.banner .carousel-item img {
+  max-height: 100%;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  margin-top: 1rem;
+}
+.content .aside {
+  width: 200px;
+  margin-right: 1rem;
+}
+.content .body {
+  flex: 1;
+  min-width: 0;
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+  overflow: auto;
+}
+.aside .head-list {
+  padding: 0.5rem;
+  background: #0065ac;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.aside .wrap-list {
+  padding-left: 0;
+  margin-bottom: 0;
+  flex: 1;
+  min-height: 0;
+}
+.aside .item {
+  display: flex;
+  padding: 0.5rem;
+  background: #ffffff;
+  transition: all 0.15s ease-in-out;
+  border-bottom: 1px solid #CDCDCD;
+  cursor: pointer;
+}
+.aside .item:hover {
+  color: #0065ac;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.block .head-block {
+  position: relative;
+  display: flex;
+}
+.block .head-block:after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1.5px;
+  background: #0065ac;
+}
+.block .head-block .title {
+  display: flex;
+  align-items: center;
+  min-width: 100px;
+  padding: 0.25rem 0.5rem;
+  background: #0065ac;
+  color: #fff;
+  text-transform: uppercase;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.block .body-block {
+  padding: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.block .products-list {
+  display: flex;
+}
+.block .products-list .product {
+  border: 1px solid #f2f2f2;
+  border-radius: 10px;
+  transition: all 0.15s ease-in-out;
+  padding: 0;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+.block .products-list .product:hover {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+.block .products-list .wrap-image-product {
+  height: 150px;
+}
+.block .products-list .wrap-image-product img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.block .products-list .body-product {
+  padding: 0.5rem;
+  font-size: 90%;
+  color: #242424;
+  opacity: 0.8;
+}
+.block .products-list .body-product .name {
+  font-weight: 700;
+}
+.block .products-list .footer-product {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+.block .products-list .price {
+  color: #242424;
+  font-weight: 700;
+}
+.block .products-list .discount {
+  color: #fff;
+  margin-left: 0.5rem;
+  padding: 0.25rem 0.5rem;
+}
+.block .news {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.block .news .detail-news {
+  display: flex;
+}
+.block .news img {
+  width: 150px;
+  object-fit: contain;
+  margin-right: 1rem;
+}
+.block .news .description {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+.block .news .more {
+  width: 100%;
+  text-align: right;
+  text-decoration: underline;
+  color: #0065ac;
+  font-size: 80%;
+}
+
+.separate {
+  border-top: 1.5px solid #0065ac;
+}
+
+.footer {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .block-footer {
+  display: flex;
+  flex-direction: column;
+}
+.footer .block-footer .title-block-footer {
+  font-weight: 600;
+}
+.footer .block-footer .item {
+  color: #0065ac;
+  padding: 0.25rem 0;
+  display: block;
+  cursor: pointer;
+}
+.footer .block-footer.contact .item {
+  color: #242424;
+}
+.footer .image-cer {
+  max-width: 100px;
+  object-fit: contain;
+}
+.footer .social {
+  display: flex;
+}
+.footer .social .wrap-ic {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  background: #0065ac;
+  margin-right: 4px;
+  border-radius: 10px;
+  transition: all 0.15s ease-in-out;
+}
+.footer .social .wrap-ic:hover {
+  opacity: 0.8;
+}
+.footer .social .wrap-ic i {
+  font-size: 1.2rem;
+  margin: auto;
+  color: white;
+}
+.footer .social .wrap-ic:last-child {
+  margin-right: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
